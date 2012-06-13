@@ -1,9 +1,11 @@
-<h1 id="Developer.Guide..About.MVC.in.Angular..Understanding.the.Model.Component">Developer Guide: About MVC in Angular: Understanding the Model Component</h1>
-<div class="developer-guide--about-mvc-in-angular--understanding-the-model-component"><p>Depending on the context of the discussion in angular documentation, the term <em>model</em> can refer to
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>Depending on the context of the discussion in angular documentation, the term <em>model</em> can refer to
 either a single object representing one entity (for example, a model called "phones" with its value
 being an array of phones) or the entire data model for the application (all entities).</p>
 
-<p>In angular, a model is any data that is reachable as a property of an angular <a href="guide/dev_guide.scopes">Scope</a> object. The name of the property is the model identifier and the value is
+<p>In angular, a model is any data that is reachable as a property of an angular <a href="guide/scope">Scope</a> object. The name of the property is the model identifier and the value is
 any JavaScript object (including arrays and primitives).</p>
 
 <p>The only requirement for a JavaScript object to be a model in angular is that the object must be
@@ -23,11 +25,11 @@ occurs in controllers:</p>
      $scope.foo = 'bar';
  }
 </code></pre></li>
-<li><p>Use an <a href="guide/dev_guide.expressions">angular expression</a> with an assignment operator in templates:</p>
+<li><p>Use an <a href="guide/expression">angular expression</a> with an assignment operator in templates:</p>
 
 <pre><code> &lt;button ng-click="{{foos='ball'}}"&gt;Click me&lt;/button&gt;
 </code></pre></li>
-<li><p>Use <a href="api/angular.module.ng.$compileProvider.directive.ngInit"><code>ngInit directive</code></a> in templates (for toy/example apps
+<li><p>Use <a href="api/ng.directive:ngInit"><code>ngInit directive</code></a> in templates (for toy/example apps
 only, not recommended for real applications):</p>
 
 <pre><code> &lt;body ng-init=" foo = 'bar' "&gt;
@@ -45,7 +47,7 @@ when processing the following template constructs:</p>
 
 <p>The code above creates a model called "query" on the current scope with the value set to "fluffy
 cloud".</p></li>
-<li><p>An iterator declaration in <a href="api/angular.module.ng.$compileProvider.directive.ngRepeat"><code>ngRepeater</code></a>:</p>
+<li><p>An iterator declaration in <a href="api/ng.directive:ngRepeat"><code>ngRepeater</code></a>:</p>
 
 <pre><code> &lt;p ng-repeat="phone in phones"&gt;&lt;/p&gt;
 </code></pre>

@@ -1,5 +1,7 @@
-<h1 id="Tutorial..11...REST.and.Custom.Services">Tutorial: 11 - REST and Custom Services</h1>
-<div class="tutorial--11---rest-and-custom-services"><ul doc-tutorial-nav="11"></ul>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><ul doc-tutorial-nav="11"></ul>
 
 <p>In this step, you will improve the way our app fetches data.</p>
 
@@ -7,7 +9,7 @@
 </div>
 
 <p>The last improvement we will make to our app is to define a custom service that represents a <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a> client. Using this client we
-can make xhr requests for data in an easier way, without having to deal with the lower-level <a href="api/angular.module.ng.$http"><code>$http</code></a> API, HTTP methods and URLs.</p>
+can make xhr requests for data in an easier way, without having to deal with the lower-level <a href="api/ng.$http"><code>$http</code></a> API, HTTP methods and URLs.</p>
 
 <p>The most important changes are listed below. You can see the full diff on <a href="https://github.com/angular/angular-phonecat/compare/step-10...step-11">GitHub</a>:</p>
 
@@ -42,15 +44,15 @@ of the service - 'Phone' - and the factory function. The factory function is sim
 controller's constructor in that both can declare dependencies via function arguments. The Phone
 service declared a dependency on the <code>$resource</code> service.</p>
 
-<p>The <a href="api/angular.module.ngResource.$resource"><code><code>$resource</code></code></a> service makes it easy to create a
+<p>The <a href="api/ngResource.$resource"><code>$resource</code></a> service makes it easy to create a
 <a href="http://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a> client with just a few
-lines of code. This client can then be used in our application, instead of the lower-level <a href="api/angular.module.ng.$http"><code>$http</code></a> service.</p>
+lines of code. This client can then be used in our application, instead of the lower-level <a href="api/ng.$http"><code>$http</code></a> service.</p>
 
 <h3>Controller</h3>
 
 <p>We simplified our sub-controllers (<code>PhoneListCtrl</code> and <code>PhoneDetailCtrl</code>) by factoring out the
-lower-level <a href="api/angular.module.ng.$http"><code>$http</code></a> service, replacing it with a new service called
-<code>Phone</code>. Angular's <a href="api/angular.module.ngResource.$resource"><code><code>$resource</code></code></a> service is easier to
+lower-level <a href="api/ng.$http"><code>$http</code></a> service, replacing it with a new service called
+<code>Phone</code>. Angular's <a href="api/ngResource.$resource"><code>$resource</code></a> service is easier to
 use than `$http for interacting with data sources exposed as RESTful resources. It is also easier
 now to understand what the code in our controllers is doing.</p>
 
@@ -111,7 +113,7 @@ we require, so in these cases, we can add a callback to process the server respo
 processing them as expected. The tests also check that our controllers are interacting with the
 service correctly.</p>
 
-<p>The <a href="api/angular.module.ngResource.$resource"><code>$resource</code></a> service augments the response object
+<p>The <a href="api/ngResource.$resource">$resource</a> service augments the response object
 with methods for updating and deleting the resource. If we were to use the standard <code>toEqual</code>
 matcher, our tests would fail because the test values would not match the responses exactly. To
 solve the problem, we use a newly-defined <code>toEqualData</code> <a href="http://pivotal.github.com/jasmine/jsdoc/symbols/jasmine.Matchers.html">Jasmine matcher</a>. When the

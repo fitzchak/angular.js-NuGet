@@ -1,5 +1,7 @@
-<h1 id="Developer.Guide..Unit.Testing">Developer Guide: Unit Testing</h1>
-<div class="developer-guide--unit-testing"><p>JavaScript is a dynamically typed language which comes with great power of expression, but it also
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>JavaScript is a dynamically typed language which comes with great power of expression, but it also
 come with almost no-help from the compiler. For this reason we feel very strongly that any code
 written in JavaScript needs to come with a strong set of tests. We have built many features into
 angular which makes testing your angular applications easy. So there is no excuse for not do it.</p>
@@ -161,7 +163,7 @@ myClass.doWork();
 
 <p>Notice that no global variables were harmed in the writing of this test.</p>
 
-<p>Angular comes with <a href="guide/dev_guide.di">dependency-injection</a> built in which makes the right thing
+<p>Angular comes with <a href="guide/di">dependency-injection</a> built in which makes the right thing
 easy to do, but you still need to do it if you wish to take advantage of the testability story.</p>
 
 <h3>Controllers</h3>
@@ -216,16 +218,16 @@ $('body').html('');
 a much easier testability story as can be seen in this example:</p>
 
 <pre class="prettyprint linenums">
-function PasswordCntrl() {
-  this.password = '';
-  this.grade = function() {
-    var size = this.password.length;
+function PasswordCntrl($scope) {
+  $scope.password = '';
+  $scope.grade = function() {
+    var size = $scope.password.length;
     if (size &gt; 8) {
-      this.strength = 'strong';
+      $scope.strength = 'strong';
     } else if (size &gt; 3) {
-      this.strength = 'medium';
+      $scope.strength = 'medium';
     } else {
-      this.strength = 'weak';
+      $scope.strength = 'weak';
     }
   };
 }
@@ -245,7 +247,7 @@ that such a test tells a story, rather then asserting random bits which don't se
 
 <h3>Filters</h3>
 
-<p><a href="api/angular.module.ng.$filter"><code>Filters</code></a> are functions which transform the data into user readable
+<p><a href="api/ng.$filter"><code>Filters</code></a> are functions which transform the data into user readable
 format. They are important because they remove the formatting responsibility from the application
 logic, further simplifying the application logic.</p>
 

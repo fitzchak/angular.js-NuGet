@@ -1,10 +1,12 @@
-<h1 id="Developer.Guide..Angular.Services..Creating.Services">Developer Guide: Angular Services: Creating Services</h1>
-<div class="developer-guide--angular-services--creating-services"><p>While angular offers several useful services, for any nontrivial application you'll find it useful
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>While angular offers several useful services, for any nontrivial application you'll find it useful
 to write your own custom services. To do this you begin by registering a service factory function
 with a module either via the <a href="api/angular.module"><code>Module#factory api</code></a> or directly
-via the <a href="api/angular.module.AUTO.$provide"><code>$provide</code></a> api inside of module config function.</p>
+via the <a href="api/AUTO.$provide"><code>$provide</code></a> api inside of module config function.</p>
 
-<p>All angular services participate in <a href="guide/dev_guide.di">dependency injection (DI)</a> by registering
+<p>All angular services participate in <a href="guide/di">dependency injection (DI)</a> by registering
 themselves with Angular's DI system (injector) under a <code>name</code> (id) as well as by declaring
 dependencies which need to be provided for the factory function of the registered service. The
 ability to swap dependencies for mocks/stubs/dummies in tests allows for services to be highly
@@ -14,7 +16,7 @@ testable.</p>
 
 <p>To register a service, you must have a module that this service will be part of. Afterwards, you
 can register the service with the module either via the <a href="api/angular.Module"><code>Module api</code></a> or
-by using the <a href="api/angular.module.AUTO.$provide"><code>$provide</code></a> service in the module configuration
+by using the <a href="api/AUTO.$provide"><code>$provide</code></a> service in the module configuration
 function.The following pseudo-code shows both approaches:</p>
 
 <p>Using the angular.Module api:
@@ -44,7 +46,7 @@ create this instance when called.</p>
 <h2>Dependencies</h2>
 
 <p>Services can not only be depended upon, but also have its own dependencies. These can be specified
-as arguments of the factory function. <a href="guide/dev_guide.di.understanding_di">Read more</a> about the DI
+as arguments of the factory function. <a href="guide/di">Read more</a> about the DI
 in Angular and the use of array notation and $inject property to make DI annotation
 minification-proof.</p>
 
@@ -95,5 +97,5 @@ important.</p>
 <h3>Related API</h3>
 
 <ul>
-<li><a href="api/angular.module.ng"><code>Angular Service API</code></a></li>
+<li><a href="api/ng">Angular Service API</a></li>
 </ul></div>

@@ -1,7 +1,9 @@
-<h1 id="Developer.Guide..About.MVC.in.Angular..Understanding.the.Controller.Component">Developer Guide: About MVC in Angular: Understanding the Controller Component</h1>
-<div class="developer-guide--about-mvc-in-angular--understanding-the-controller-component"><p>In angular, a controller is a JavaScript function(type/class) that is used to augment instances of
-angular <a href="guide/dev_guide.scopes">Scope</a>, excluding the root scope. When you or angular create a new
-child scope object via the <a href="api/angular.module.ng.$rootScope.Scope#$new"><code>scope.$new</code></a> API        , there is an
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>In angular, a controller is a JavaScript function(type/class) that is used to augment instances of
+angular <a href="guide/scope">Scope</a>, excluding the root scope. When you or angular create a new
+child scope object via the <a href="api/ng.$rootScope.Scope#$new"><code>scope.$new</code></a> API        , there is an
 option to pass in a controller as a method argument. This will tell angular to associate the
 controller with the new scope and to augment its behavior.</p>
 
@@ -37,7 +39,7 @@ template/view. This behavior interacts with and modifies the application model.<
 <p>As discussed in the <a href="guide/dev_guide.mvc.understanding_model">Model</a> section of this guide, any
 objects (or primitives) assigned to the scope become model properties. Any functions assigned to
 the scope are available in the template/view, and can be invoked via angular expressions
-and <code>ng</code> event handler directives (e.g. <a href="api/angular.module.ng.$compileProvider.directive.ngClick"><code>ngClick</code></a>).</p>
+and <code>ng</code> event handler directives (e.g. <a href="api/ng.directive:ngClick"><code>ngClick</code></a>).</p>
 
 <h2>Using Controllers Correctly</h2>
 
@@ -46,7 +48,7 @@ needed for a single view.</p>
 
 <p>The most common way to keep controllers slim is by encapsulating work that doesn't belong to
 controllers into services and then using these services in controllers via dependency injection.
-This is discussed in the <a href="guide/dev_guide.di">Dependency Injection</a> <a href="guide/dev_guide.services">Services</a> sections of this guide.</p>
+This is discussed in the <a href="guide/di">Dependency Injection</a> <a href="guide/dev_guide.services">Services</a> sections of this guide.</p>
 
 <p>Do not use controllers for:</p>
 
@@ -57,7 +59,7 @@ Putting any presentation logic into controllers significantly affects testabilit
 logic. Angular offers <a href="guide/dev_guide.templates.databinding">dev_guide.templates.databinding</a> for automatic DOM manipulation. If
 you have to perform your own manual DOM manipulation, encapsulate the presentation logic in
 <a href="guide/directive">directives</a>.</li>
-<li>Input formatting — Use <a href="guide/dev_guide.forms">angular form controls</a> instead.</li>
+<li>Input formatting — Use <a href="guide/forms">angular form controls</a> instead.</li>
 <li>Output filtering — Use <a href="guide/dev_guide.templates.filters">angular filters</a> instead.</li>
 <li>Run stateless or stateful code shared across controllers — Use <a href="guide/dev_guide.services">angular services</a> instead.</li>
 <li>Instantiate or manage the life-cycle of other components (for example, to create service
@@ -66,7 +68,7 @@ instances).</li>
 
 <h2>Associating Controllers with Angular Scope Objects</h2>
 
-<p>You can associate controllers with scope objects explicitly via the <a href="api/angular.module.ng.$rootScope.Scope#$new"><code>scope.$new</code></a> api or implicitly via the <a href="api/angular.module.ng.$compileProvider.directive.ngController"><code>ngController directive</code></a> or <a href="api/angular.module.ng.$route"><code>$route service</code></a>.</p>
+<p>You can associate controllers with scope objects explicitly via the <a href="api/ng.$rootScope.Scope#$new"><code>scope.$new</code></a> api or implicitly via the <a href="api/ng.directive:ngController"><code>ngController directive</code></a> or <a href="api/ng.$route"><code>$route service</code></a>.</p>
 
 <h3>Controller Constructor and Methods Example</h3>
 
@@ -153,7 +155,7 @@ input box) in the second button.</p>
 
 <h3>Controller Inheritance Example</h3>
 
-<p>Controller inheritance in angular is based on <a href="api/angular.module.ng.$rootScope.Scope"><code>Scope</code></a> inheritance. Let's
+<p>Controller inheritance in angular is based on <a href="api/ng.$rootScope.Scope"><code>Scope</code></a> inheritance. Let's
 have a look at an example:</p>
 
 <pre class="prettyprint linenums">

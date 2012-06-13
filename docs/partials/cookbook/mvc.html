@@ -1,13 +1,16 @@
-<h1 id="Cookbook..MVC">Cookbook: MVC</h1>
-<div class="cookbook--mvc"><p>MVC allows for a clean an testable separation between the behavior (controller) and the view
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>MVC allows for a clean an testable separation between the behavior (controller) and the view
 (HTML template). A Controller is just a JavaScript class which is grafted onto the scope of the
 view. This makes it very easy for the controller and the view to share the model.</p>
 
-<p>The model is simply the controller's this. This makes it very easy to test the controller in
-isolation since one can simply instantiate the controller and test without a view, because there is
-no connection between the controller and the view.</p>
+<p>The model is a set of objects and primitives that are referenced from the Scope ($scope) object.
+This makes it very easy to test the controller in isolation since one can simply instantiate the
+controller and test without a view, because there is no connection between the controller and the
+view.</p>
 
-<h2>Demo Source Code</h2>
+<h2>Source</h2>
 <div source-edit="" source-edit-deps="angular.js script.js" source-edit-html="index.html-10" source-edit-css="" source-edit-js="script.js-9" source-edit-unit="" source-edit-scenario="scenario.js-11"></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
 <pre class="prettyprint linenums" ng-set-text="index.html-10" ng-html-wrap=" angular.js script.js"></pre>
@@ -115,7 +118,7 @@ no connection between the controller and the view.</p>
     }
   </script>
 </div>
-</div><h2>Demo Source Code</h2>
+</div><h2>Demo</h2>
 <div class="well doc-example-live" ng-embed-app="" ng-set-html="index.html-10" ng-eval-javascript="script.js-9"></div>
 
 <h2>Things to notice</h2>
@@ -131,5 +134,5 @@ board variable.</li>
 <li>Changing the model changes the view.</li>
 <li>The view can call any controller function.</li>
 <li>In this example, the <code>setUrl()</code> and <code>readUrl()</code> functions copy the game state to/from the URL's
-hash so the browser's back button will undo game steps. See deep-linking. This example calls <a href="api/angular.module.ng.$rootScope.Scope#$watch"><code>$watch()</code></a> to set up a listener that invokes <code>readUrl()</code> when needed.</li>
+hash so the browser's back button will undo game steps. See deep-linking. This example calls <a href="api/ng.$rootScope.Scope#$watch"><code>$watch()</code></a> to set up a listener that invokes <code>readUrl()</code> when needed.</li>
 </ul></div>

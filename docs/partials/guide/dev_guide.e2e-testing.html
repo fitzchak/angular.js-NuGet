@@ -1,5 +1,7 @@
-<h1 id="Developer.Guide..E2E.Testing">Developer Guide: E2E Testing</h1>
-<div class="developer-guide--e2e-testing"><p>As applications grow in size and complexity, it becomes unrealistic to rely on manual testing to
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>As applications grow in size and complexity, it becomes unrealistic to rely on manual testing to
 verify the correctness of new features, catch bugs and notice regressions.</p>
 
 <p>To solve this problem, we have built an Angular Scenario Runner which simulates user interactions
@@ -86,22 +88,22 @@ write the test).</p>
 
 <h3>browser().location().url()</h3>
 
-<p>Returns the <a href="api/angular.module.ng.$location"><code>$location.url()</code></a> of the currently loaded page in
+<p>Returns the <a href="api/ng.$location"><code>$location.url()</code></a> of the currently loaded page in
 the test frame.</p>
 
 <h3>browser().location().path()</h3>
 
-<p>Returns the <a href="api/angular.module.ng.$location"><code>$location.path()</code></a> of the currently loaded page in
+<p>Returns the <a href="api/ng.$location"><code>$location.path()</code></a> of the currently loaded page in
 the test frame.</p>
 
 <h3>browser().location().search()</h3>
 
-<p>Returns the <a href="api/angular.module.ng.$location"><code>$location.search()</code></a> of the currently loaded page
+<p>Returns the <a href="api/ng.$location"><code>$location.search()</code></a> of the currently loaded page
 in the test frame.</p>
 
 <h3>browser().location().hash()</h3>
 
-<p>Returns the <a href="api/angular.module.ng.$location"><code>$location.hash()</code></a> of the currently loaded page in
+<p>Returns the <a href="api/ng.$location"><code>$location.hash()</code></a> of the currently loaded page in
 the test frame.</p>
 
 <h3>expect(future).{matcher}</h3>

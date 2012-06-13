@@ -1,5 +1,7 @@
-<h1 id="Developer.Guide..Understanding.Angular.Templates">Developer Guide: Understanding Angular Templates</h1>
-<div class="developer-guide--understanding-angular-templates"><p>An angular template is the declarative specification that, along with information from the model
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>An angular template is the declarative specification that, along with information from the model
 and controller, becomes the rendered view that a user sees in the browser. It is the static DOM,
 containing HTML, CSS, and angular-specific elements and angular-specific element attributes.  The
 angular elements and attributes direct angular to add behavior and transform the template DOM into
@@ -10,10 +12,10 @@ the dynamic view DOM.</p>
 <ul>
 <li><a href="guide/directive">Directive</a> — An attribute or element that
 augments an existing DOM element or represents a reusable DOM component - a widget.</li>
-<li><a href="api/angular.module.ng.$interpolate"><code>Markup</code></a> — The double
+<li><a href="api/ng.$interpolate"><code>Markup</code></a> — The double
 curly brace notation <code>{{ }}</code> to bind expressions to elements is built-in angular markup.</li>
 <li><a href="guide/dev_guide.templates.filters">Filter</a> — Formats your data for display to the user.</li>
-<li><a href="guide/dev_guide.forms">Form controls</a> — Lets you validate user input.</li>
+<li><a href="guide/forms">Form controls</a> — Lets you validate user input.</li>
 </ul>
 
 <p>Note:  In addition to declaring the elements above in templates, you can also access these elements
@@ -21,7 +23,7 @@ in JavaScript code.</p>
 
 <p>The following code snippet shows a simple angular template made up of standard HTML tags along with
 angular <a href="guide/directive">directives</a> and curly-brace bindings
-with <a href="guide/dev_guide.expressions">expressions</a>:</p>
+with <a href="guide/expression">expressions</a>:</p>
 
 <pre class="prettyprint linenums">
 &lt;html ng-app&gt;
@@ -40,7 +42,7 @@ with <a href="guide/dev_guide.expressions">expressions</a>:</p>
 <p>In a simple single-page app, the template consists of HTML, CSS, and angular directives contained
 in just one HTML file (usually <code>index.html</code>). In a more complex app, you can display multiple views
 within one main page using "partials", which are segments of template located in separate HTML
-files.  You "include" the partials in the main page using the <a href="api/angular.module.ng.$route"><code>$route</code></a> service in conjunction with the <a href="api/angular.module.ng.$compileProvider.directive.ngView"><code>ngView</code></a> directive. An
+files.  You "include" the partials in the main page using the <a href="api/ng.$route"><code>$route</code></a> service in conjunction with the <a href="api/ng.directive:ngView"><code>ngView</code></a> directive. An
 example of this technique is shown in the <a href="tutorial/index">angular tutorial</a>, in steps seven and
 eight.</p>
 
@@ -48,7 +50,7 @@ eight.</p>
 
 <ul>
 <li><a href="guide/dev_guide.templates.filters">Angular Filters</a></li>
-<li><a href="guide/dev_guide.forms">Angular Forms</a></li>
+<li><a href="guide/forms">Angular Forms</a></li>
 </ul>
 
 <h3>Related API</h3>

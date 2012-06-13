@@ -1,5 +1,7 @@
-<h1 id="Tutorial..3...Filtering.Repeaters">Tutorial: 3 - Filtering Repeaters</h1>
-<div class="tutorial--3---filtering-repeaters"><ul doc-tutorial-nav="3"></ul>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><ul doc-tutorial-nav="3"></ul>
 
 <p>We did a lot of work in laying a foundation for the app in the last step, so now we'll do something
 simple; we will add full text search (yes, it will be simple!). We will also write an end-to-end
@@ -47,7 +49,7 @@ user types into the search box.</p>
 </pre>
 
 <p>We added a standard HTML <code>&lt;input&gt;</code> tag and used angular's
-<a href="api/angular.module.ng.$filter.filter"><code>$filter</code></a> function to process the input for the
+<a href="api/ng.filter:filter"><code>$filter</code></a> function to process the input for the
 <code>ngRepeate</code> directive.</p>
 
 <p>This lets a user enter search criteria and immediately see the effects of their search on the phone
@@ -63,7 +65,7 @@ changes to the data model cause the repeater's input to change, the repeater eff
 the DOM to reflect the current state of the model.</p>
 
 <p><img  class="diagram" src="img/tutorial/tutorial_03.png"></p></li>
-<li><p>Use of <code>filter</code> filter. The <a href="api/angular.module.ng.$filter.filter"><code>filter</code></a> function uses the
+<li><p>Use of <code>filter</code> filter. The <a href="api/ng.filter:filter"><code>filter</code></a> function uses the
 <code>query</code> value to create a new array that contains only those records that match the <code>query</code>.</p>
 
 <p><code>ngRepeat</code> automatically updates the view in response to the changing number of phones returned
@@ -149,7 +151,7 @@ and title elements:</p>
 
 <p>While using double curlies works fine in within the title element, you might have noticed that
 for a split second they are actually displayed to the user while the page is loading. A better
-solution would be to use the <a href="api/angular.module.ng.$compileProvider.directive.ngBind"><code>ngBind</code></a> or <a href="api/angular.module.ng.$compileProvider.directive.ngBindTemplate"><code>ngBindTemplate</code></a> directives, which are invisible to the user while the page is loading:</p>
+solution would be to use the <a href="api/ng.directive:ngBind"><code>ngBind</code></a> or <a href="api/ng.directive:ngBindTemplate"><code>ngBindTemplate</code></a> directives, which are invisible to the user while the page is loading:</p>
 
 <pre><code>  &lt;title ng-bind-template="Google Phone Gallery: {{query}}"&gt;Google Phone Gallery&lt;/title&gt;
 </code></pre></li>

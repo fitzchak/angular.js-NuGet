@@ -1,5 +1,7 @@
-<h1 id="Tutorial..7...Routing...Multiple.Views">Tutorial: 7 - Routing &amp; Multiple Views</h1>
-<div class="tutorial--7---routing---multiple-views"><ul doc-tutorial-nav="7"></ul>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><ul doc-tutorial-nav="7"></ul>
 
 <p>In this step, you will learn how to create a layout template and how to build an app that has
 multiple views by adding routing.</p>
@@ -27,8 +29,8 @@ our application. Other "partial templates" are then included into this layout te
 the current "route" — the view that is currently displayed to the user.</p>
 
 <p>Application routes in angular are declared via the
-<a href="api/angular.module.ng.$routeProvider"><code>$routeProvider</code></a>, which is the provider of the
-<a href="api/angular.module.ng.$route"><code>$route service</code></a>. This service makes it easy to wire together
+<a href="api/ng.$routeProvider"><code>$routeProvider</code></a>, which is the provider of the
+<a href="api/ng.$route"><code>$route service</code></a>. This service makes it easy to wire together
 controllers, view templates, and the current
 URL location in the browser. Using this feature we can implement <a href="http://en.wikipedia.org/wiki/Deep_linking">deep linking</a>, which lets us utilize the browser's
 history (back and forward navigation) and bookmarks.</p>
@@ -61,8 +63,8 @@ both module systems can live side by side and fulfil their goals.</p>
 angular.module('phonecat', []).
   config(['$routeProvider', function($routeProvider) {
   $routeProvider.
-      when('/phones', {template: 'partials/phone-list.html',   controller: PhoneListCtrl}).
-      when('/phones/:phoneId', {template: 'partials/phone-detail.html', controller: PhoneDetailCtrl}).
+      when('/phones', {templateUrl: 'partials/phone-list.html',   controller: PhoneListCtrl}).
+      when('/phones/:phoneId', {templateUrl: 'partials/phone-detail.html', controller: PhoneDetailCtrl}).
       otherwise({redirectTo: '/phones'});
 }]);
 </pre>
@@ -94,10 +96,10 @@ the browser address doesn't match either of our routes.</p>
 <p>Note the use of the <code>:phoneId</code> parameter in the second route declaration. The <code>$route</code> service uses
 the route declaration — <code>'/phones/:phoneId'</code> — as a template that is matched against the current
 URL. All variables defined with the <code>:</code> notation are extracted into the
-<a href="api/angular.module.ng.$routeParams"><code>$routeParams</code></a> object.</p>
+<a href="api/ng.$routeParams"><code>$routeParams</code></a> object.</p>
 
 <p>In order for our application to bootstrap with our newly created module we'll also need to specify
-the module name as the value of the <a href="api/angular.module.ng.$compileProvider.directive.ngApp"><code>ngApp</code></a>
+the module name as the value of the <a href="api/ng.directive:ngApp"><code>ngApp</code></a>
 directive:</p>
 
 <p><strong><code>app/index.html</code>:</strong>
@@ -121,7 +123,7 @@ function PhoneDetailCtrl($scope, $routeParams) {
 
 <h3>Template</h3>
 
-<p>The <code>$route</code> service is usually used in conjunction with the <a href="api/angular.module.ng.$compileProvider.directive.ngView"><code>ngView</code></a> directive. The role of the <code>ngView</code> directive is to include the view template for the current
+<p>The <code>$route</code> service is usually used in conjunction with the <a href="api/ng.directive:ngView"><code>ngView</code></a> directive. The role of the <code>ngView</code> directive is to include the view template for the current
 route into the layout template, which makes it a perfect fit for our <code>index.html</code> template.</p>
 
 <p><strong><code>app/index.html</code>:</strong>

@@ -1,8 +1,10 @@
-<h1 id="Developer.Guide..Modules">Developer Guide: Modules</h1>
-<div class="developer-guide--modules"><h2>What is a Module?</h2>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><h2>What is a Module?</h2>
 
 <p>Most applications have a main method which instantiates, wires, and bootstraps the application.
-Angular apps don't have a main method, instead the modules serves the purpose of declaratively
+Angular apps don't have a main method, instead modules serve the purpose of declaratively
 specifying how an application should be bootstrapped. There are several advantages to this
 approach:</p>
 
@@ -17,7 +19,7 @@ configuration and help end-to-end test the application</li>
 
 <h2>The Basics</h2>
 
-<p>Ok, I'm in a hurry how do i get a Hello World module working?</p>
+<p>Ok, I'm in a hurry. How do I get a Hello World module working?</p>
 
 <p>Important things to notice:</p>
 
@@ -27,11 +29,11 @@ configuration and help end-to-end test the application</li>
 bootstraps the app using your module.</li>
 </ul>
 
-<h2>Demo Source Code</h2>
-<div source-edit="simpleApp" source-edit-deps="angular.js script.js" source-edit-html="index.html-51" source-edit-css="" source-edit-js="script.js-50" source-edit-unit="" source-edit-scenario=""></div>
+<h2>Source</h2>
+<div source-edit="simpleApp" source-edit-deps="angular.js script.js" source-edit-html="index.html-54" source-edit-css="" source-edit-js="script.js-53" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-51" ng-html-wrap="simpleApp angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-51">
+<pre class="prettyprint linenums" ng-set-text="index.html-54" ng-html-wrap="simpleApp angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-54">
     
     <div>
       {{ 'World' | greet }}
@@ -39,8 +41,8 @@ bootstraps the app using your module.</li>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-50"></pre>
-<script type="text/ng-template" id="script.js-50">
+<pre class="prettyprint linenums" ng-set-text="script.js-53"></pre>
+<script type="text/ng-template" id="script.js-53">
       // declare a module
       var simpleAppModule = angular.module('simpleApp', []);
 
@@ -54,8 +56,8 @@ bootstraps the app using your module.</li>
 
     </script>
 </div>
-</div><h2>Demo Source Code</h2>
-<div class="well doc-example-live" ng-embed-app="simpleApp" ng-set-html="index.html-51" ng-eval-javascript="script.js-50"></div>
+</div><h2>Demo</h2>
+<div class="well doc-example-live" ng-embed-app="simpleApp" ng-set-html="index.html-54" ng-eval-javascript="script.js-53"></div>
 
 <h2>Recommended Setup</h2>
 
@@ -71,17 +73,17 @@ initialization code.</li>
 </ul>
 
 <p>The reason for this breakup is that in your tests, it is often necessary to ignore the
-initialization code, which tends to be difficult to test. By putting it into separate module it
+initialization code, which tends to be difficult to test. By putting it into a separate module it
 can be easily ignored in tests. The tests can also be more focused by only loading the modules
-which are relevant to tests.</p>
+that are relevant to tests.</p>
 
 <p>The above is only a suggestion, so feel free to tailor it to your needs.</p>
 
-<h2>Demo Source Code</h2>
-<div source-edit="xmpl" source-edit-deps="angular.js script.js" source-edit-html="index.html-53" source-edit-css="" source-edit-js="script.js-52" source-edit-unit="" source-edit-scenario=""></div>
+<h2>Source</h2>
+<div source-edit="xmpl" source-edit-deps="angular.js script.js" source-edit-html="index.html-56" source-edit-css="" source-edit-js="script.js-55" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-53" ng-html-wrap="xmpl angular.js script.js"></pre>
-<script type="text/ng-template" id="index.html-53">
+<pre class="prettyprint linenums" ng-set-text="index.html-56" ng-html-wrap="xmpl angular.js script.js"></pre>
+<script type="text/ng-template" id="index.html-56">
     
     <div ng-controller="XmplController">
       {{ greeting }}!
@@ -89,8 +91,8 @@ which are relevant to tests.</p>
   </script>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-52"></pre>
-<script type="text/ng-template" id="script.js-52">
+<pre class="prettyprint linenums" ng-set-text="script.js-55"></pre>
+<script type="text/ng-template" id="script.js-55">
       angular.module('xmpl.service', []).
         value('greeter', {
           salutation: 'Hello',
@@ -127,8 +129,8 @@ which are relevant to tests.</p>
       }
     </script>
 </div>
-</div><h2>Demo Source Code</h2>
-<div class="well doc-example-live" ng-embed-app="xmpl" ng-set-html="index.html-53" ng-eval-javascript="script.js-52"></div>
+</div><h2>Demo</h2>
+<div class="well doc-example-live" ng-embed-app="xmpl" ng-set-html="index.html-56" ng-eval-javascript="script.js-55"></div>
 
 <h2>Module Loading &amp; Dependencies</h2>
 

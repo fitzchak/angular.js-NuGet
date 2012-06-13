@@ -1,5 +1,7 @@
-<h1 id="Tutorial..6...Templating.Links...Images">Tutorial: 6 - Templating Links &amp; Images</h1>
-<div class="tutorial--6---templating-links---images"><ul doc-tutorial-nav="6"></ul>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><ul doc-tutorial-nav="6"></ul>
 
 <p>In this step, you will add thumbnail images for the phones in the phone list, and links that, for
 now, will go nowhere. In subsequent steps you will use the links to display additional information
@@ -51,7 +53,7 @@ now-familiar double-curly brace binding in the <code>href</code> attribute value
 <code>{{phone.name}}</code> binding as the element content. In this step the <code>{{phone.id}}</code> binding is used in
 the element attribute.</p>
 
-<p>We also added phone images next to each record using an image tag with the <a href="api/angular.module.ng.$compileProvider.directive.ngSrc"><code>ngSrc</code></a> directive. That directive prevents the
+<p>We also added phone images next to each record using an image tag with the <a href="api/ng.directive:ngSrc"><code>ngSrc</code></a> directive. That directive prevents the
 browser from treating the angular <code>{{ expression }}</code> markup literally, and initiating a request to
 invalid url <code>http://localhost:8000/app/{{phone.imageUrl}}</code>, which it would have done if we had only
 specified an attribute binding in a regular <code>src</code> attribute (<code>&lt;img  class="diagram" src="{{phone.imageUrl}}"&gt;</code>).

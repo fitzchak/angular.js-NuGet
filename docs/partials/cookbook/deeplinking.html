@@ -1,5 +1,7 @@
-<h1 id="Cookbook..Deep.Linking">Cookbook: Deep Linking</h1>
-<div class="cookbook--deep-linking"><p>Deep linking allows you to encode the state of the application in the URL so that it can be
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><p>Deep linking allows you to encode the state of the application in the URL so that it can be
 bookmarked and the application can be restored from the URL to the same state.</p>
 
 <p>While angular does not force you to deal with bookmarks in any particular way, it has services
@@ -29,11 +31,11 @@ controller.</p>
 <li>Settings: url <code>settings</code> Show an edit screen for user contact information.</li>
 </ul>
 
-<h2>Demo Source Code</h2>
-<div source-edit="deepLinking" source-edit-deps="angular.js angular-sanitize.js script.js" source-edit-html="index.html-7 settings.html welcome.html" source-edit-css="style.css" source-edit-js="script.js-6" source-edit-unit="" source-edit-scenario="scenario.js-8"></div>
+<h2>Source</h2>
+<div source-edit="deepLinking" source-edit-deps="angular.js angular-sanitize.js script.js" source-edit-html="index.html-13 settings.html welcome.html" source-edit-css="style.css" source-edit-js="script.js-12" source-edit-unit="" source-edit-scenario="scenario.js-14"></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-7" ng-html-wrap="deepLinking angular.js angular-sanitize.js script.js"></pre>
-<script type="text/ng-template" id="index.html-7">
+<pre class="prettyprint linenums" ng-set-text="index.html-13" ng-html-wrap="deepLinking angular.js angular-sanitize.js script.js"></pre>
+<script type="text/ng-template" id="index.html-13">
     <div ng-controller="AppCntl">
       <h2>Your App Chrome</h2>
       [ <a href="welcome">Welcome</a> | <a href="settings">Settings</a> ]
@@ -98,13 +100,13 @@ controller.</p>
  </style>
 </div>
 <div class="tab-pane" title="script.js">
-<pre class="prettyprint linenums" ng-set-text="script.js-6"></pre>
-<script type="text/ng-template" id="script.js-6">
+<pre class="prettyprint linenums" ng-set-text="script.js-12"></pre>
+<script type="text/ng-template" id="script.js-12">
    angular.module('deepLinking', ['ngSanitize'])
      .config(function($routeProvider) {
         $routeProvider.
-          when("/welcome",  {template:'welcome.html',  controller:WelcomeCntl}).
-          when("/settings", {template:'settings.html', controller:SettingsCntl});
+          when("/welcome",  {templateUrl:'welcome.html',  controller:WelcomeCntl}).
+          when("/settings", {templateUrl:'settings.html', controller:SettingsCntl});
      });
 
    AppCntl.$inject = ['$scope', '$route']
@@ -139,8 +141,8 @@ controller.</p>
  </script>
 </div>
 <div class="tab-pane" title="End to end test">
-<pre class="prettyprint linenums" ng-set-text="scenario.js-8"></pre>
-<script type="text/ng-template" id="scenario.js-8">
+<pre class="prettyprint linenums" ng-set-text="scenario.js-14"></pre>
+<script type="text/ng-template" id="scenario.js-14">
    it('should navigate to URL', function() {
      element('a:contains(Welcome)').click();
      expect(element('[ng-view]').text()).toMatch(/Hello anonymous/);
@@ -152,18 +154,18 @@ controller.</p>
    });
  </script>
 </div>
-</div><h2>Demo Source Code</h2>
-<div class="well doc-example-live" ng-embed-app="deepLinking" ng-set-html="index.html-7" ng-eval-javascript="script.js-6"></div>
+</div><h2>Demo</h2>
+<div class="well doc-example-live" ng-embed-app="deepLinking" ng-set-html="index.html-13" ng-eval-javascript="script.js-12"></div>
 
 <h2>Things to notice</h2>
 
 <ul>
 <li>Routes are defined in the <code>AppCntl</code> class. The initialization of the controller causes the
-initialization of the <a href="api/angular.module.ng.$route"><code>$route</code></a> service with the proper URL
+initialization of the <a href="api/ng.$route"><code>$route</code></a> service with the proper URL
 routes.</li>
-<li>The  <a href="api/angular.module.ng.$route"><code>$route</code></a> service then watches the URL and instantiates the
+<li>The  <a href="api/ng.$route"><code>$route</code></a> service then watches the URL and instantiates the
 appropriate controller when the URL changes.</li>
-<li>The  <a href="api/angular.module.ng.$compileProvider.directive.ngView"><code>ngView</code></a> widget loads the
+<li>The  <a href="api/ng.directive:ngView"><code>ngView</code></a> widget loads the
 view when the URL changes. It also sets the view scope to the newly instantiated controller.</li>
 <li>Changing the URL is sufficient to change the controller and view. It makes no difference whether
 the URL is changed programatically or by the user.</li>

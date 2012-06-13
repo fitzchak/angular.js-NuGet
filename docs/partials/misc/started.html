@@ -1,5 +1,7 @@
-<h1 id="Getting.Started">Getting Started</h1>
-<div class="getting-started"><h2>Hello World!</h2>
+<h1><code ng:non-bindable=""></code>
+<span class="hint"></span>
+</h1>
+<div><h2>Hello World!</h2>
 
 <p>A great way for you to get started with AngularJS is to create the tradtional
 "Hello World!" app:</p>
@@ -12,16 +14,16 @@
 <li>Open the file in your web browser.</li>
 </ol>
 
-<h2>Demo Source Code</h2>
-<div source-edit="" source-edit-deps="angular.js" source-edit-html="index.html-54" source-edit-css="" source-edit-js="" source-edit-unit="" source-edit-scenario=""></div>
+<h2>Source</h2>
+<div source-edit="" source-edit-deps="angular.js" source-edit-html="index.html-67" source-edit-css="" source-edit-js="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-54" ng-html-wrap=" angular.js"></pre>
-<script type="text/ng-template" id="index.html-54">
+<pre class="prettyprint linenums" ng-set-text="index.html-67" ng-html-wrap=" angular.js"></pre>
+<script type="text/ng-template" id="index.html-67">
         Hello {{'World'}}!
     </script>
 </div>
-</div><h2>Demo Source Code</h2>
-<div class="well doc-example-live" ng-embed-app="" ng-set-html="index.html-54" ng-eval-javascript=""></div>
+</div><h2>Demo</h2>
+<div class="well doc-example-live" ng-embed-app="" ng-set-html="index.html-67" ng-eval-javascript=""></div>
 
 <p>The resulting web page should look something like the following:</p>
 
@@ -44,7 +46,7 @@ is loaded:</p>
 </pre>
 
 <p>(For details on what happens when angular processes an HTML page,
-see <a href="guide/dev_guide.bootstrap">Bootstrap</a>.)</p>
+see <a href="guide/bootstrap">Bootstrap</a>.)</p>
 
 <p>Finally, this line in the <code>&lt;body&gt;</code> of the page is the template that describes
 how to display our greeting in the UI:</p>
@@ -69,18 +71,18 @@ bind a dynamic expression to our greeting text.</p>
 <li>Refresh your browser window.</li>
 </ol>
 
-<h2>Demo Source Code</h2>
-<div source-edit="" source-edit-deps="angular.js" source-edit-html="index.html-55" source-edit-css="" source-edit-js="" source-edit-unit="" source-edit-scenario=""></div>
+<h2>Source</h2>
+<div source-edit="" source-edit-deps="angular.js" source-edit-html="index.html-68" source-edit-css="" source-edit-js="" source-edit-unit="" source-edit-scenario=""></div>
 <div class="tabbable"><div class="tab-pane" title="index.html">
-<pre class="prettyprint linenums" ng-set-text="index.html-55" ng-html-wrap=" angular.js"></pre>
-<script type="text/ng-template" id="index.html-55">
+<pre class="prettyprint linenums" ng-set-text="index.html-68" ng-html-wrap=" angular.js"></pre>
+<script type="text/ng-template" id="index.html-68">
   Your name: <input type="text" ng-model="yourname" placeholder="World">
   <hr>
   Hello {{yourname || 'World'}}!
  </script>
 </div>
-</div><h2>Demo Source Code</h2>
-<div class="well doc-example-live" ng-embed-app="" ng-set-html="index.html-55" ng-eval-javascript=""></div>
+</div><h2>Demo</h2>
+<div class="well doc-example-live" ng-embed-app="" ng-set-html="index.html-68" ng-eval-javascript=""></div>
 
 <p>After the refresh, the page should look something like this:</p>
 
@@ -122,7 +124,7 @@ write, test, maintain, and understand.</p>
 
 <h3>Data</h3>
 
-<p>The Model is referenced from properties on <a href="guide/dev_guide.scopes">angular scope objects</a>.
+<p>The Model is referenced from properties on <a href="guide/scope">angular scope objects</a>.
 The data in your model could be Javascript objects, arrays, or primitives, it doesn't matter.  What
 matters is that these are all referenced by the scope object.</p>
 
