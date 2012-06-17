@@ -1,3 +1,5 @@
+# Angular.js NuGet Package
+
 Nuget package is here: http://nuget.org/packages/angularjs
 
 I created it because that I needed to use angular.js in two different projects, and keeping the files in sync with each new release was an ugly process: you need to download the new files, and than remove the version number from each file name. 
