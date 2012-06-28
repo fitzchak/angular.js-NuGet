@@ -9404,7 +9404,7 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 })( window );
 /**
- * @license AngularJS v1.0.1-ffb27013
+ * @license AngularJS v1.0.1
  * (c) 2010-2012 Google, Inc. http://angularjs.org
  * License: MIT
  */
@@ -10652,11 +10652,11 @@ function setupModuleLoader(window) {
  * - `codeName` – `{string}` – Code name of the release, such as "jiggling-armfat".
  */
 var version = {
-  full: '1.0.1-ffb27013',    // all of these placeholder strings will be replaced by rake's
+  full: '1.0.1',    // all of these placeholder strings will be replaced by rake's
   major: 1,    // compile task
   minor: 0,
   dot: 1,
-  codeName: 'temporal-domination'
+  codeName: 'thorium-shielding'
 };
 
 
