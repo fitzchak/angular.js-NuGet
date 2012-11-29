@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <version>1.0.1</version>
+    <version>1.1.1-Unstable</version>
     <authors>Fitzchak Yitzchaki</authors>
     <owners />
     <projectUrl>http://angularjs.org</projectUrl>
@@ -185,7 +185,5 @@
     <file src="content\Scripts\angular-scenario.js" target="content\Scripts\angular-scenario.js" />
     <file src="content\Scripts\angular.js" target="content\Scripts\angular.js" />
     <file src="content\Scripts\angular.min.js" target="content\Scripts\angular.min.js" />
-    <file src="content\Scripts\jstd-scenario-adapter-config.js" target="content\Scripts\jstd-scenario-adapter-config.js" />
-    <file src="content\Scripts\jstd-scenario-adapter.js" target="content\Scripts\jstd-scenario-adapter.js" />
   </files>
 </package>
