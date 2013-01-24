@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+    <metadata>
+        <id>angularjs</id>
+        <version>1.1.2-Unstable</version>
+        <title>Angular JS</title>
+        <authors>Fitzchak Yitzchaki</authors>
+        <owners />
+        <projectUrl>http://angularjs.org</projectUrl>
+        <iconUrl>https://secure.gravatar.com/avatar/6e1b5ab3ef1593413f1bee4e5a6e6ae7?s=140&amp;d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-140.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>AngularJS. HTML enhanced for web apps!</description>
+        <copyright />
+        <tags>angular angularjs</tags>
+    </metadata>
+    <files>
+        <file src="content\Scripts\i18n\angular-locale_am-et.js" target="content\Scripts\i18n\angular-locale_am-et.js" />
+        <file src="content\Scripts\i18n\angular-locale_am.js" target="content\Scripts\i18n\angular-locale_am.js" />
+        <file src="content\Scripts\i18n\angular-locale_ar-eg.js" target="content\Scripts\i18n\angular-locale_ar-eg.js" />
+        <file src="content\Scripts\i18n\angular-locale_ar.js" target="content\Scripts\i18n\angular-locale_ar.js" />
+        <file src="content\Scripts\i18n\angular-locale_bg-bg.js" target="content\Scripts\i18n\angular-locale_bg-bg.js" />
+        <file src="content\Scripts\i18n\angular-locale_bg.js" target="content\Scripts\i18n\angular-locale_bg.js" />
+        <file src="content\Scripts\i18n\angular-locale_bn-bd.js" target="content\Scripts\i18n\angular-locale_bn-bd.js" />
+        <file src="content\Scripts\i18n\angular-locale_bn.js" target="content\Scripts\i18n\angular-locale_bn.js" />
+        <file src="content\Scripts\i18n\angular-locale_ca-es.js" target="content\Scripts\i18n\angular-locale_ca-es.js" />
+        <file src="content\Scripts\i18n\angular-locale_ca.js" target="content\Scripts\i18n\angular-locale_ca.js" />
+        <file src="content\Scripts\i18n\angular-locale_cs-cz.js" target="content\Scripts\i18n\angular-locale_cs-cz.js" />
+        <file src="content\Scripts\i18n\angular-locale_cs.js" target="content\Scripts\i18n\angular-locale_cs.js" />
+        <file src="content\Scripts\i18n\angular-locale_da-dk.js" target="content\Scripts\i18n\angular-locale_da-dk.js" />
+        <file src="content\Scripts\i18n\angular-locale_da.js" target="content\Scripts\i18n\angular-locale_da.js" />
+        <file src="content\Scripts\i18n\angular-locale_de-at.js" target="content\Scripts\i18n\angular-locale_de-at.js" />
+        <file src="content\Scripts\i18n\angular-locale_de-be.js" target="content\Scripts\i18n\angular-locale_de-be.js" />
+        <file src="content\Scripts\i18n\angular-locale_de-ch.js" target="content\Scripts\i18n\angular-locale_de-ch.js" />
+        <file src="content\Scripts\i18n\angular-locale_de-de.js" target="content\Scripts\i18n\angular-locale_de-de.js" />
+        <file src="content\Scripts\i18n\angular-locale_de-lu.js" target="content\Scripts\i18n\angular-locale_de-lu.js" />
+        <file src="content\Scripts\i18n\angular-locale_de.js" target="content\Scripts\i18n\angular-locale_de.js" />
+        <file src="content\Scripts\i18n\angular-locale_el-gr.js" target="content\Scripts\i18n\angular-locale_el-gr.js" />
+        <file src="content\Scripts\i18n\angular-locale_el-polyton.js" target="content\Scripts\i18n\angular-locale_el-polyton.js" />
+        <file src="content\Scripts\i18n\angular-locale_el.js" target="content\Scripts\i18n\angular-locale_el.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-as.js" target="content\Scripts\i18n\angular-locale_en-as.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-au.js" target="content\Scripts\i18n\angular-locale_en-au.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-dsrt-us.js" target="content\Scripts\i18n\angular-locale_en-dsrt-us.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-dsrt.js" target="content\Scripts\i18n\angular-locale_en-dsrt.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-gb.js" target="content\Scripts\i18n\angular-locale_en-gb.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-gu.js" target="content\Scripts\i18n\angular-locale_en-gu.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-ie.js" target="content\Scripts\i18n\angular-locale_en-ie.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-in.js" target="content\Scripts\i18n\angular-locale_en-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-iso.js" target="content\Scripts\i18n\angular-locale_en-iso.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-mh.js" target="content\Scripts\i18n\angular-locale_en-mh.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-mp.js" target="content\Scripts\i18n\angular-locale_en-mp.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-sg.js" target="content\Scripts\i18n\angular-locale_en-sg.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-um.js" target="content\Scripts\i18n\angular-locale_en-um.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-us.js" target="content\Scripts\i18n\angular-locale_en-us.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-vi.js" target="content\Scripts\i18n\angular-locale_en-vi.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-za.js" target="content\Scripts\i18n\angular-locale_en-za.js" />
+        <file src="content\Scripts\i18n\angular-locale_en-zz.js" target="content\Scripts\i18n\angular-locale_en-zz.js" />
+        <file src="content\Scripts\i18n\angular-locale_en.js" target="content\Scripts\i18n\angular-locale_en.js" />
+        <file src="content\Scripts\i18n\angular-locale_es-es.js" target="content\Scripts\i18n\angular-locale_es-es.js" />
+        <file src="content\Scripts\i18n\angular-locale_es.js" target="content\Scripts\i18n\angular-locale_es.js" />
+        <file src="content\Scripts\i18n\angular-locale_et-ee.js" target="content\Scripts\i18n\angular-locale_et-ee.js" />
+        <file src="content\Scripts\i18n\angular-locale_et.js" target="content\Scripts\i18n\angular-locale_et.js" />
+        <file src="content\Scripts\i18n\angular-locale_eu-es.js" target="content\Scripts\i18n\angular-locale_eu-es.js" />
+        <file src="content\Scripts\i18n\angular-locale_eu.js" target="content\Scripts\i18n\angular-locale_eu.js" />
+        <file src="content\Scripts\i18n\angular-locale_fa-ir.js" target="content\Scripts\i18n\angular-locale_fa-ir.js" />
+        <file src="content\Scripts\i18n\angular-locale_fa.js" target="content\Scripts\i18n\angular-locale_fa.js" />
+        <file src="content\Scripts\i18n\angular-locale_fi-fi.js" target="content\Scripts\i18n\angular-locale_fi-fi.js" />
+        <file src="content\Scripts\i18n\angular-locale_fi.js" target="content\Scripts\i18n\angular-locale_fi.js" />
+        <file src="content\Scripts\i18n\angular-locale_fil-ph.js" target="content\Scripts\i18n\angular-locale_fil-ph.js" />
+        <file src="content\Scripts\i18n\angular-locale_fil.js" target="content\Scripts\i18n\angular-locale_fil.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-bl.js" target="content\Scripts\i18n\angular-locale_fr-bl.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-ca.js" target="content\Scripts\i18n\angular-locale_fr-ca.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-fr.js" target="content\Scripts\i18n\angular-locale_fr-fr.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-gp.js" target="content\Scripts\i18n\angular-locale_fr-gp.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-mc.js" target="content\Scripts\i18n\angular-locale_fr-mc.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-mf.js" target="content\Scripts\i18n\angular-locale_fr-mf.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-mq.js" target="content\Scripts\i18n\angular-locale_fr-mq.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr-re.js" target="content\Scripts\i18n\angular-locale_fr-re.js" />
+        <file src="content\Scripts\i18n\angular-locale_fr.js" target="content\Scripts\i18n\angular-locale_fr.js" />
+        <file src="content\Scripts\i18n\angular-locale_gl-es.js" target="content\Scripts\i18n\angular-locale_gl-es.js" />
+        <file src="content\Scripts\i18n\angular-locale_gl.js" target="content\Scripts\i18n\angular-locale_gl.js" />
+        <file src="content\Scripts\i18n\angular-locale_gsw-ch.js" target="content\Scripts\i18n\angular-locale_gsw-ch.js" />
+        <file src="content\Scripts\i18n\angular-locale_gsw.js" target="content\Scripts\i18n\angular-locale_gsw.js" />
+        <file src="content\Scripts\i18n\angular-locale_gu-in.js" target="content\Scripts\i18n\angular-locale_gu-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_gu.js" target="content\Scripts\i18n\angular-locale_gu.js" />
+        <file src="content\Scripts\i18n\angular-locale_he-il.js" target="content\Scripts\i18n\angular-locale_he-il.js" />
+        <file src="content\Scripts\i18n\angular-locale_he.js" target="content\Scripts\i18n\angular-locale_he.js" />
+        <file src="content\Scripts\i18n\angular-locale_hi-in.js" target="content\Scripts\i18n\angular-locale_hi-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_hi.js" target="content\Scripts\i18n\angular-locale_hi.js" />
+        <file src="content\Scripts\i18n\angular-locale_hr-hr.js" target="content\Scripts\i18n\angular-locale_hr-hr.js" />
+        <file src="content\Scripts\i18n\angular-locale_hr.js" target="content\Scripts\i18n\angular-locale_hr.js" />
+        <file src="content\Scripts\i18n\angular-locale_hu-hu.js" target="content\Scripts\i18n\angular-locale_hu-hu.js" />
+        <file src="content\Scripts\i18n\angular-locale_hu.js" target="content\Scripts\i18n\angular-locale_hu.js" />
+        <file src="content\Scripts\i18n\angular-locale_id-id.js" target="content\Scripts\i18n\angular-locale_id-id.js" />
+        <file src="content\Scripts\i18n\angular-locale_id.js" target="content\Scripts\i18n\angular-locale_id.js" />
+        <file src="content\Scripts\i18n\angular-locale_in.js" target="content\Scripts\i18n\angular-locale_in.js" />
+        <file src="content\Scripts\i18n\angular-locale_is-is.js" target="content\Scripts\i18n\angular-locale_is-is.js" />
+        <file src="content\Scripts\i18n\angular-locale_is.js" target="content\Scripts\i18n\angular-locale_is.js" />
+        <file src="content\Scripts\i18n\angular-locale_it-it.js" target="content\Scripts\i18n\angular-locale_it-it.js" />
+        <file src="content\Scripts\i18n\angular-locale_it.js" target="content\Scripts\i18n\angular-locale_it.js" />
+        <file src="content\Scripts\i18n\angular-locale_iw.js" target="content\Scripts\i18n\angular-locale_iw.js" />
+        <file src="content\Scripts\i18n\angular-locale_ja-jp.js" target="content\Scripts\i18n\angular-locale_ja-jp.js" />
+        <file src="content\Scripts\i18n\angular-locale_ja.js" target="content\Scripts\i18n\angular-locale_ja.js" />
+        <file src="content\Scripts\i18n\angular-locale_kn-in.js" target="content\Scripts\i18n\angular-locale_kn-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_kn.js" target="content\Scripts\i18n\angular-locale_kn.js" />
+        <file src="content\Scripts\i18n\angular-locale_ko-kr.js" target="content\Scripts\i18n\angular-locale_ko-kr.js" />
+        <file src="content\Scripts\i18n\angular-locale_ko.js" target="content\Scripts\i18n\angular-locale_ko.js" />
+        <file src="content\Scripts\i18n\angular-locale_ln-cd.js" target="content\Scripts\i18n\angular-locale_ln-cd.js" />
+        <file src="content\Scripts\i18n\angular-locale_ln.js" target="content\Scripts\i18n\angular-locale_ln.js" />
+        <file src="content\Scripts\i18n\angular-locale_lt-lt.js" target="content\Scripts\i18n\angular-locale_lt-lt.js" />
+        <file src="content\Scripts\i18n\angular-locale_lt.js" target="content\Scripts\i18n\angular-locale_lt.js" />
+        <file src="content\Scripts\i18n\angular-locale_lv-lv.js" target="content\Scripts\i18n\angular-locale_lv-lv.js" />
+        <file src="content\Scripts\i18n\angular-locale_lv.js" target="content\Scripts\i18n\angular-locale_lv.js" />
+        <file src="content\Scripts\i18n\angular-locale_ml-in.js" target="content\Scripts\i18n\angular-locale_ml-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_ml.js" target="content\Scripts\i18n\angular-locale_ml.js" />
+        <file src="content\Scripts\i18n\angular-locale_mo.js" target="content\Scripts\i18n\angular-locale_mo.js" />
+        <file src="content\Scripts\i18n\angular-locale_mr-in.js" target="content\Scripts\i18n\angular-locale_mr-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_mr.js" target="content\Scripts\i18n\angular-locale_mr.js" />
+        <file src="content\Scripts\i18n\angular-locale_ms-my.js" target="content\Scripts\i18n\angular-locale_ms-my.js" />
+        <file src="content\Scripts\i18n\angular-locale_ms.js" target="content\Scripts\i18n\angular-locale_ms.js" />
+        <file src="content\Scripts\i18n\angular-locale_mt-mt.js" target="content\Scripts\i18n\angular-locale_mt-mt.js" />
+        <file src="content\Scripts\i18n\angular-locale_mt.js" target="content\Scripts\i18n\angular-locale_mt.js" />
+        <file src="content\Scripts\i18n\angular-locale_nl-nl.js" target="content\Scripts\i18n\angular-locale_nl-nl.js" />
+        <file src="content\Scripts\i18n\angular-locale_nl.js" target="content\Scripts\i18n\angular-locale_nl.js" />
+        <file src="content\Scripts\i18n\angular-locale_no.js" target="content\Scripts\i18n\angular-locale_no.js" />
+        <file src="content\Scripts\i18n\angular-locale_or-in.js" target="content\Scripts\i18n\angular-locale_or-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_or.js" target="content\Scripts\i18n\angular-locale_or.js" />
+        <file src="content\Scripts\i18n\angular-locale_pl-pl.js" target="content\Scripts\i18n\angular-locale_pl-pl.js" />
+        <file src="content\Scripts\i18n\angular-locale_pl.js" target="content\Scripts\i18n\angular-locale_pl.js" />
+        <file src="content\Scripts\i18n\angular-locale_pt-br.js" target="content\Scripts\i18n\angular-locale_pt-br.js" />
+        <file src="content\Scripts\i18n\angular-locale_pt-pt.js" target="content\Scripts\i18n\angular-locale_pt-pt.js" />
+        <file src="content\Scripts\i18n\angular-locale_pt.js" target="content\Scripts\i18n\angular-locale_pt.js" />
+        <file src="content\Scripts\i18n\angular-locale_ro-ro.js" target="content\Scripts\i18n\angular-locale_ro-ro.js" />
+        <file src="content\Scripts\i18n\angular-locale_ro.js" target="content\Scripts\i18n\angular-locale_ro.js" />
+        <file src="content\Scripts\i18n\angular-locale_ru-ru.js" target="content\Scripts\i18n\angular-locale_ru-ru.js" />
+        <file src="content\Scripts\i18n\angular-locale_ru.js" target="content\Scripts\i18n\angular-locale_ru.js" />
+        <file src="content\Scripts\i18n\angular-locale_sk-sk.js" target="content\Scripts\i18n\angular-locale_sk-sk.js" />
+        <file src="content\Scripts\i18n\angular-locale_sk.js" target="content\Scripts\i18n\angular-locale_sk.js" />
+        <file src="content\Scripts\i18n\angular-locale_sl-si.js" target="content\Scripts\i18n\angular-locale_sl-si.js" />
+        <file src="content\Scripts\i18n\angular-locale_sl.js" target="content\Scripts\i18n\angular-locale_sl.js" />
+        <file src="content\Scripts\i18n\angular-locale_sq-al.js" target="content\Scripts\i18n\angular-locale_sq-al.js" />
+        <file src="content\Scripts\i18n\angular-locale_sq.js" target="content\Scripts\i18n\angular-locale_sq.js" />
+        <file src="content\Scripts\i18n\angular-locale_sr-cyrl-rs.js" target="content\Scripts\i18n\angular-locale_sr-cyrl-rs.js" />
+        <file src="content\Scripts\i18n\angular-locale_sr-latn-rs.js" target="content\Scripts\i18n\angular-locale_sr-latn-rs.js" />
+        <file src="content\Scripts\i18n\angular-locale_sr-rs.js" target="content\Scripts\i18n\angular-locale_sr-rs.js" />
+        <file src="content\Scripts\i18n\angular-locale_sr.js" target="content\Scripts\i18n\angular-locale_sr.js" />
+        <file src="content\Scripts\i18n\angular-locale_sv-se.js" target="content\Scripts\i18n\angular-locale_sv-se.js" />
+        <file src="content\Scripts\i18n\angular-locale_sv.js" target="content\Scripts\i18n\angular-locale_sv.js" />
+        <file src="content\Scripts\i18n\angular-locale_sw-tz.js" target="content\Scripts\i18n\angular-locale_sw-tz.js" />
+        <file src="content\Scripts\i18n\angular-locale_sw.js" target="content\Scripts\i18n\angular-locale_sw.js" />
+        <file src="content\Scripts\i18n\angular-locale_ta-in.js" target="content\Scripts\i18n\angular-locale_ta-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_ta.js" target="content\Scripts\i18n\angular-locale_ta.js" />
+        <file src="content\Scripts\i18n\angular-locale_te-in.js" target="content\Scripts\i18n\angular-locale_te-in.js" />
+        <file src="content\Scripts\i18n\angular-locale_te.js" target="content\Scripts\i18n\angular-locale_te.js" />
+        <file src="content\Scripts\i18n\angular-locale_th-th.js" target="content\Scripts\i18n\angular-locale_th-th.js" />
+        <file src="content\Scripts\i18n\angular-locale_th.js" target="content\Scripts\i18n\angular-locale_th.js" />
+        <file src="content\Scripts\i18n\angular-locale_tl-ph.js" target="content\Scripts\i18n\angular-locale_tl-ph.js" />
+        <file src="content\Scripts\i18n\angular-locale_tl.js" target="content\Scripts\i18n\angular-locale_tl.js" />
+        <file src="content\Scripts\i18n\angular-locale_tr-tr.js" target="content\Scripts\i18n\angular-locale_tr-tr.js" />
+        <file src="content\Scripts\i18n\angular-locale_tr.js" target="content\Scripts\i18n\angular-locale_tr.js" />
+        <file src="content\Scripts\i18n\angular-locale_uk-ua.js" target="content\Scripts\i18n\angular-locale_uk-ua.js" />
+        <file src="content\Scripts\i18n\angular-locale_uk.js" target="content\Scripts\i18n\angular-locale_uk.js" />
+        <file src="content\Scripts\i18n\angular-locale_ur-pk.js" target="content\Scripts\i18n\angular-locale_ur-pk.js" />
+        <file src="content\Scripts\i18n\angular-locale_ur.js" target="content\Scripts\i18n\angular-locale_ur.js" />
+        <file src="content\Scripts\i18n\angular-locale_vi-vn.js" target="content\Scripts\i18n\angular-locale_vi-vn.js" />
+        <file src="content\Scripts\i18n\angular-locale_vi.js" target="content\Scripts\i18n\angular-locale_vi.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh-cn.js" target="content\Scripts\i18n\angular-locale_zh-cn.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh-hans-cn.js" target="content\Scripts\i18n\angular-locale_zh-hans-cn.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh-hans.js" target="content\Scripts\i18n\angular-locale_zh-hans.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh-hk.js" target="content\Scripts\i18n\angular-locale_zh-hk.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh-tw.js" target="content\Scripts\i18n\angular-locale_zh-tw.js" />
+        <file src="content\Scripts\i18n\angular-locale_zh.js" target="content\Scripts\i18n\angular-locale_zh.js" />
+        <file src="content\Scripts\angular-bootstrap-prettify.js" target="content\Scripts\angular-bootstrap-prettify.js" />
+        <file src="content\Scripts\angular-bootstrap-prettify.min.js" target="content\Scripts\angular-bootstrap-prettify.min.js" />
+        <file src="content\Scripts\angular-bootstrap.js" target="content\Scripts\angular-bootstrap.js" />
+        <file src="content\Scripts\angular-bootstrap.min.js" target="content\Scripts\angular-bootstrap.min.js" />
+        <file src="content\Scripts\angular-cookies.js" target="content\Scripts\angular-cookies.js" />
+        <file src="content\Scripts\angular-cookies.min.js" target="content\Scripts\angular-cookies.min.js" />
+        <file src="content\Scripts\angular-loader.js" target="content\Scripts\angular-loader.js" />
+        <file src="content\Scripts\angular-loader.min.js" target="content\Scripts\angular-loader.min.js" />
+        <file src="content\Scripts\angular-mocks.js" target="content\Scripts\angular-mocks.js" />
+        <file src="content\Scripts\angular-resource.js" target="content\Scripts\angular-resource.js" />
+        <file src="content\Scripts\angular-resource.min.js" target="content\Scripts\angular-resource.min.js" />
+        <file src="content\Scripts\angular-sanitize.js" target="content\Scripts\angular-sanitize.js" />
+        <file src="content\Scripts\angular-sanitize.min.js" target="content\Scripts\angular-sanitize.min.js" />
+        <file src="content\Scripts\angular-scenario.js" target="content\Scripts\angular-scenario.js" />
+        <file src="content\Scripts\angular.js" target="content\Scripts\angular.js" />
+        <file src="content\Scripts\angular.min.js" target="content\Scripts\angular.min.js" />
+    </files>
+</package>
